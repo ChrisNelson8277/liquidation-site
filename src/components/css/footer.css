@@ -1,0 +1,21 @@
+.footer-container{
+    width: 100%;
+    background-color: rgba(250, 235, 215, 0.285);
+    bottom: 0;
+}
+#login-button{
+    float: left;
+    padding: 0 1%;
+    border-radius: 50%;
+}
+
+.ele-login{
+    color: rgb(190, 89, 236);
+    font-size: 24px;
+    float: left;
+    margin-left: 1vw;
+}
+.dev-sig{
+    float: right;
+    font-size: 16px;
+}

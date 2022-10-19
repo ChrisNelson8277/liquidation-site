@@ -1,0 +1,78 @@
+.admin-panel-container{
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.admin-card{
+    width: 100%;
+    display: inline-block;
+    min-height: 35vh;
+    max-height: 35vh;
+    width: 100%;
+    flex-basis: 75%;
+    margin: 5%;
+    position: relative;
+}
+.admin-image img{
+    max-width: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.admin-image{
+    width: 100%;
+    height: 25vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+
+
+.slide-image2{
+    background-size: 50%;
+    background-repeat:no-repeat;
+}
+
+.manage-container{
+    margin-top: 3vh;
+    font-size: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5% 0; 
+}
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.admin-card:hover .slide-image2{
+    opacity: 0.3;
+    }
+.admin-card:hover .overlay{
+opacity: 1;
+}
+.admin-card:hover .slide-image2{
+    opacity: 1;
+    filter:grayscale(1);
+    }
+
+.text{
+
+        background-color: #04AA6D;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+        cursor: pointer;
+        border-radius: 16px;
+      
+}
+.text:hover{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}

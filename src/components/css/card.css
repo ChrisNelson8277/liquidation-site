@@ -1,0 +1,287 @@
+.card-container{
+    width: 100%;
+    background-color: rgba(101, 98, 101, 0.724);
+    display: inline-block;
+    border-radius: 10px;
+    font-family: 'Public Sans', sans-serif;
+    color: white;
+}
+
+
+.card-btn{
+    width: 100%;
+    margin: 10% .5vw;
+    font-size: 0.8rem;
+    line-height: 1;
+    border: none;
+    border: 3px solid rgb(0, 0, 0);
+    transition: border 4s;
+    min-width: 25vw;
+    height: 5vh;
+}
+
+.card-btn:hover{
+    cursor: pointer; 
+}
+
+.card-btn:focus{
+    border: 3px solid rgb(255, 0, 157);
+    box-shadow: 0 0 12px black;
+    
+    
+}
+
+.btn-grid{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 70%;
+}
+/* InfoModal css */
+.modal-test{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    right: 15%;
+    margin-left: 2%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+    background-color: rgb(232, 228, 236);
+    min-width: 60%;
+    z-index: 2;
+}
+.modal-edit{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    right: 15%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+    background-color: rgb(232, 228, 236);
+    min-width: 60%;
+    z-index: 2;
+    max-height: 80%;
+    overflow-y: scroll;
+}
+.modal-click-box{
+    position: relative;
+    top: -25vh;
+    left: -35vw;
+    background: black;
+    width: 100%;
+    display: block;
+    height: 100%;
+    min-height: 100vh;
+    z-index: 2;
+}
+
+.modal-header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    background-color: none;
+}
+.edit-header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    min-height: 5px;
+    background-color: none;
+}
+.modal-exit{
+    margin-right: 2vw;
+    height: 2vh;
+    width: 1vw;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 8%;
+    top: 0;
+    
+    
+
+}
+
+.exit-icon{
+    font-size: 24px;
+}
+.exit-icon:hover{
+    cursor: pointer;
+    color: red;
+}
+.item-container{
+    top: -5vh;
+}
+.item-name{
+    height: 3vh;
+    position: relative;
+}
+
+.modal-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info-img{
+    height: 30vh;
+    width: 80%;
+    object-fit: cover;
+    margin-bottom: 1vh;
+}
+
+.item-desc{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    word-wrap: break-word;
+    background-color: rgb(233, 168, 229);
+    height: 8vh;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+    text-align: left;
+}
+
+.item-desc2{
+    width: 80%;
+}
+
+.item-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 85%;
+    margin: auto;
+    background-color: rgb(176, 142, 216);
+    font-weight: 700;
+}
+
+
+.item-table tr th {
+    background-color: rgb(157, 85, 225);
+    color: white;
+}
+.item-table h1{
+    font-size: 1.5rem;
+}
+.item-table td{
+    padding: 0 2%;
+    margin: 0 2%;
+}
+
+.card-h1{
+    font-size: 1.5rem;
+    padding: 3%;
+}
+.slider-container{
+    display: inline-flex;
+    width: 100%;
+    height: 1200px;
+    justify-content: center;
+}
+.right-arrow{
+    display: inline-flex;
+    align-items: center;
+  }
+.left-arrow{
+    display: inline-flex;
+    align-items: center;
+}
+.image-slider{
+    display: inline-flex;
+    width: 80%;
+    height: 60%;
+    margin: 0px auto;
+}
+.slide-image{
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%
+}
+.slider-container img{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 3%;
+    
+}
+@media (min-width: 600px) {
+    .image-slider{
+        width: 80%;
+        height: auto;
+        margin: 0px auto;
+    }
+    .card-btn{
+        margin: 15% 1vw;
+        min-width: 25vw;
+    }
+    .card-btn{
+        font-size: 1rem;
+    }
+}
+@media(min-width:850px){
+    .slider-contianer img{
+        max-height: 300px;
+    }
+}
+@media (min-width:1200px) {
+    .card-btn{
+        min-width: 10vw;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+    .image-slider{
+        width: 80%;
+        height: auto;
+        margin: 0px auto;
+      }
+      .slider-container img{
+        min-height: 35vh;
+      }
+      .modal-exit{
+        margin-right: 2vw;
+        height: 2vh;
+        width: 1vw;
+        background: none;
+        border: none;
+        position: absolute;
+        right: 0;
+        
+        
+    
+    }
+    .info-img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 1vh;
+        max-height: 300px;
+    }
+    .item-desc{
+        font-size: 25px;
+    }
+    .item-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 80%;
+    margin: auto;
+    background-color: rgb(176, 142, 216);
+}
+.exit-icon{
+    font-size: 44px;
+}
+    
+}
+

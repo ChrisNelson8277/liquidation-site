@@ -1,0 +1,31 @@
+.admin-modal-container{
+    width: 100%;
+    position: absolute;
+    max-height: 100%;
+    
+}
+.admin-form{
+    user-select: text;
+}
+.admin-form textarea{
+    height: 10vh;
+    width: 92%;
+    font-size: 1rem;
+    padding: 0;
+}
+.admin-form input{
+    width: 90%;
+
+}
+.description{
+    margin: 0 1%;
+}
+.delete-button{
+    margin-top: 1%;
+    width: 90%;
+    padding: 1%;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
