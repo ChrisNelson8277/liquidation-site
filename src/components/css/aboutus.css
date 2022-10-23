@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    background-image: url("./about-us.jpg");
+    background-color: rgb(166, 166, 166);
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -13,7 +13,7 @@
     overflow: scroll;
 }
 .about-us h1{
-    color: rgb(12, 48, 48);
+    color: rgb(255, 255, 255);
 }
 
 .about-us-wrapper {
@@ -71,7 +71,7 @@
 }
 .about-para p{
     margin: 0% 10% 5%;
-    background-color: rgb(238, 209, 236);
+    background-color: rgb(255, 255, 255);
     padding: 2% 2%;
     border-radius: 10px;
 }
@@ -105,7 +105,6 @@
     }
     .about-para p{
         margin: 0 5%;
-        background-color: rgb(238, 209, 236);
         padding: 2% 2%;
         border-radius: 10px;
         font-size: 1.8rem;
