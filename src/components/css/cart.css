@@ -1,11 +1,12 @@
 .cart-container{
     width: 90%;
     min-height: 88%;
-    background: white;
+    background: rgb(214, 214, 214);
     /* linear-gradient(35deg, rgba(84, 84, 203, 0.991), rgb(143, 139, 139)); */
-    position: absolute;
+    position: fixed;
+    top: 5%;
+    right: 0%;
     border-radius: 10px;
-    right: -58%;
     z-index: 2;
     margin-top: 2vh;
     font-size: 1rem;
@@ -81,7 +82,14 @@
 }
 @media (min-width: 1200px) {
     .cart-container{
-        width: 50%;
-        right: -33%;
+        width: 60%;
+    }
+}
+@media(max-width:700px){
+    .bottom-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        font-size: 1.1rem !important;
     }
 }

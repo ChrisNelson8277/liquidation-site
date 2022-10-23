@@ -1,6 +1,6 @@
 .cart-card-container{
     display: flex;
-    background: rgb(176, 188, 255);
+    background: rgb(146, 44, 44);
     width: 95%;
     margin: auto;
     margin-top: 1vh;
@@ -26,31 +26,31 @@
 }
 .card-text h3{
     padding: 5% 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
+}
+#empty-cart{
+    font-size: 1.5rem;
 }
 .bottom-card {
     position: absolute;
     bottom: 0;
     display: inline-flex;
-    align-items: flex-start;
     align-items: center;
     width: 100%;
+    color: white;
+    font-size: 1.3rem;
     margin-bottom: 1vh;
+    justify-content: center;
 }
-.qty-selector{
-    margin: 0 0 7vh 0
-}
+
 .qty-selector input{
     width: 20%;
     text-align: center;
     margin: 3%;
 }
 .remove-button button{
-    position: absolute;
-    bottom: 0;
-    right: 25%;
-    padding: 2% 5%;
+    padding: 0 1rem;
     background-color: rgb(209, 50, 50);
     color: white;
     border-radius: 10px;
@@ -65,9 +65,7 @@
     margin-bottom: 0.5vh;
 }
 @media(min-width:800px){
-    .qty-selector{
-        margin: 0 0 2vh 0
-    }
+    
     .remove-button{
         right: 2%;
         padding: 5%;

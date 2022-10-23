@@ -1,47 +1,60 @@
-import React from 'react'
-import Card from './components/Card'
-import { useEffect, useState } from 'react';
+import React from "react";
+import Card from "./components/Card";
+import { useEffect, useState } from "react";
 function Body(props) {
-  const [isLoading, setIsLoading] = useState(true)
-  const [loadedMeetups, setLoadedMeetups] = useState([]);
-
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadedProducts, setLoadedProducts] = useState([]);
 
   useEffect(() => {
     setIsLoading(true);
-    fetch('https://luckyliquidations-41153-default-rtdb.firebaseio.com/products.json'
-    ).then(response => {
+    fetch(
+      "https://luckyliquidations-41153-default-rtdb.firebaseio.com/products.json"
+    )
+      .then((response) => {
         return response.json();
-    }).then(data => {
+      })
+      .then((data) => {
         const products = [];
         for (const key in data) {
-            const product = {
-                id: key,
-                ...data[key]
-            };
-            products.push(product)
+          const product = {
+            id: key,
+            ...data[key],
+          };
+          products.push(product);
         }
-        setIsLoading(false)
-        setLoadedMeetups(products)
-    });
+        setIsLoading(false);
+        setLoadedProducts(products);
+      });
+  }, []);
 
-}, []);
-
-if (isLoading) {
-  return (
+  if (isLoading) {
+    return (
       <section>
-          <p>Loading...</p>
+        <p>Loading...</p>
       </section>
-  )
-}
+    );
+  }
 
   return (
     <div className="bod-container" id="listings">
-      <div className='bod-spacer'>
-
-      {loadedMeetups.map(meetup => <Card cartItems={props.cartItems} setCartItems={props.setCartItems} key={meetup.id} id={meetup.id} image={meetup.image} name={meetup.title} description={meetup.description} price={meetup.price} condition={meetup.condition} category={meetup.category} />)}
+      <div className="bod-spacer">
+        {loadedProducts.map((product) => (
+          <Card
+            cartItems={props.cartItems}
+            setCartItems={props.setCartItems}
+            key={product.id}
+            id={product.id}
+            image={product.image}
+            name={product.title}
+            description={product.description}
+            price={product.price}
+            condition={product.condition}
+            category={product.category}
+          />
+        ))}
       </div>
-      </div>
-  )
+    </div>
+  );
 }
 
-export default Body
+export default Body;
