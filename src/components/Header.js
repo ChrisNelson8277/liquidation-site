@@ -14,6 +14,9 @@ function Header(props) {
     navigate("/login");
     props.page("login");
   }
+  function goHome() {
+    navigate("/");
+  }
   function handleOtherClick(e) {
     e.preventDefault();
     props.openCart(!props.cartState);
@@ -27,17 +30,19 @@ function Header(props) {
         </div>
         <ul className="header-ul">
           <li>
-            <Link to="listings" offset={10}>
-              Listings
+            <Link
+              to="/"
+              offset={10}
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              Home
             </Link>
           </li>
+
           <li>
-            <Link to="about-us" offset={100}>
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link onClick={handleSignupClick} to="contact-us">
+            <Link to="/adminpanel" onClick={handleSignupClick}>
               AdminPanel
             </Link>
           </li>
